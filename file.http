@@ -1,0 +1,7 @@
+### Obtain Access Token from Keycloak Token Endpoint
+
+###@name Get Access Token
+
+
+
+GET http://localhost:8180/realms/oauth2-demo/protocol/openid-connect/auth?response_type=code&client_id=oauth2-demo-pkce-client&redirect_uri=http://localhost:4200/welcome&code_challenge=RgQXHL6QBvGh4zXDxNmbvOanOrybtqoU8ikgDOmLyjA&code_challenge_method=S256
