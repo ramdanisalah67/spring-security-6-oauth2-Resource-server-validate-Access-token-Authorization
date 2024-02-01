@@ -32,7 +32,7 @@ public class JwtConverter implements Converter<Jwt, AbstractAuthenticationToken>
             List<String> keycloakRoles = mapper.convertValue(realmAccess.get("roles"),List.class);
             List<GrantedAuthority> roles = new ArrayList<>();
             for (String keycloakRole : keycloakRoles) {
-                roles.add(new SimpleGrantedAuthority("ROLE_" + keycloakRole));
+                roles.add(new SimpleGrantedAuthority(keycloakRole));
 
 
             }
